@@ -46,14 +46,21 @@ models:
     models:
       snowplow_web:
         base:
+          manifest:
+            +schema: "scratch"
           scratch:
             +schema: "scratch"
         page_views:
+          +schema: "scratch"
           scratch:
             +schema: "scratch"
         sessions:
+          +schema: "scratch"
           scratch:
             +schema: "scratch"
+        user_mapping:
+          +schema: "scratch"
         users:
+          +schema: "scratch"
           scratch:
             +schema: "scratch"
