@@ -42,8 +42,6 @@ vars:
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
 models:
-  my_new_project:
-    models:
-      snowplow_web:
-        # Put all tables into the same schema defined in environment dataset section in dbt
-        +schema: null
+  snowplow_web:
+    # Put all tables into the same schema defined in environment dataset section in dbt
+    +schema: null
