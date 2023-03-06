@@ -33,9 +33,9 @@ vars:
     snowplow__enable_yauaa: true
     snowplow__enable_iab: true
     snowplow__derived_tstamp_partitioned: false
-    snowplow__min_visit_length: 5 # Default value
-    snowplow__heartbeat: 10 # Default value
-    snowplow__start_date: '2022-08-01'
+    snowplow__min_visit_length: 30 # Default value
+    snowplow__heartbeat: 30 # Default value
+    snowplow__start_date: '2023-03-05'
     snowplow__app_id: ['website']
 
 # Configuring models
