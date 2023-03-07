@@ -21,8 +21,8 @@
 {%- set sde_types = [['string', 'string', 'string']] -%}
 {%- set sde_aliases = ['step'] -%}
 {%- set context_cols = ['CONTEXTS_COM_SNOWPLOWANALYTICS_CONSOLE_USER_1_0_1'] -%}
-{%- set context_keys = [['userId', 'firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
-{%- set context_types = [['string', 'string', 'string', 'string', 'string', 'string', 'string']] -%}
+{%- set context_keys = [['firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
+{%- set context_types = [['string', 'string', 'string', 'string', 'string', 'string']] -%}
 {%- set context_alias = [] -%}
 
 {{ snowplow_normalize.normalize_events(
