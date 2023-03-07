@@ -14,9 +14,9 @@
     }
 ) }}
 
-{%- set user_cols = ['CONTEXTS_COM_SNOWPLOWANALYTICS_SNOWPLOW_UA_PARSER_CONTEXT_1_0_0', 'CONTEXTS_COM_SNOWPLOWANALYTICS_CONSOLE_USER_1_0_1'] -%}
-{%- set user_keys = [['useragentFamily', 'useragentMajor', 'useragentMinor', 'useragentPatch', 'useragentVersion', 'osFamily', 'osMajor', 'osMinor', 'osPatch', 'osPatchMinor', 'osVersion', 'deviceFamily'], ['userId', 'firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
-{%- set user_types = [['string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string'], ['string', 'string', 'string', 'string', 'string', 'string', 'string']] -%}
+{%- set user_cols = ['CONTEXTS_COM_SNOWPLOWANALYTICS_CONSOLE_USER_1_0_1'] -%}
+{%- set user_keys = [['userId', 'firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
+{%- set user_types = [['string', 'string', 'string', 'string', 'string', 'string', 'string']] -%}
 
 {{ snowplow_normalize.users_table(
     'network_userid',
