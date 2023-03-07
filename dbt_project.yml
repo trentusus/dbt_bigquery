@@ -30,10 +30,10 @@ vars:
     # Sources
     snowplow__atomic_schema: rt_pipeline_prod1
     # Variables - Standard Config
-    snowplow__start_date: '2023-03-05'
-    snowplow__backfill_limit_days: 1
+    snowplow__start_date: '2023-02-15'
+    snowplow__backfill_limit_days: 5
     snowplow__app_id: ['console-qa']
-    snowplow__derived_tstamp_partitioned: true
+    snowplow__derived_tstamp_partitioned: false
 
   snowplow_web:
     snowplow__atomic_schema: rt_pipeline_prod1
