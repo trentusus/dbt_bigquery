@@ -15,14 +15,14 @@
 ) }}
 
 {%- set event_names = ['data_structures_workflow'] -%}
-{%- set flat_cols = ['app_id', 'derived_tstamp', 'domain_userid', 'network_userid', 'user_id'] -%}
+{%- set flat_cols = ['app_id', 'derived_tstamp', 'domain_userid', 'network_userid'] -%}
 {%- set sde_cols = ['UNSTRUCT_EVENT_COM_SNOWPLOWANALYTICS_CONSOLE_DATA_STRUCTURES_WORKFLOW_1_0_2'] -%}
 {%- set sde_keys = [['step_action', 'step_value', 'step_failure_reason']] -%}
 {%- set sde_types = [['string', 'string', 'string']] -%}
 {%- set sde_aliases = ['step'] -%}
 {%- set context_cols = ['CONTEXTS_COM_SNOWPLOWANALYTICS_CONSOLE_USER_1_0_1'] -%}
-{%- set context_keys = [['firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
-{%- set context_types = [['string', 'string', 'string', 'string', 'string', 'string']] -%}
+{%- set context_keys = [['userId', 'firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
+{%- set context_types = [['string', 'string', 'string', 'string', 'string', 'string', 'string']] -%}
 {%- set context_alias = [] -%}
 
 {{ snowplow_normalize.normalize_events(
