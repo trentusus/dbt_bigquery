@@ -1,7 +1,7 @@
 {{ config(
     tags = "snowplow_normalize_incremental",
     materialized = var("snowplow__incremental_materialization", "snowplow_incremental"),
-    unique_key = "user_id",
+    unique_key = "network_userid",
     upsert_date_key = "latest_collector_tstamp",
     partition_by = snowplow_utils.get_partition_by(bigquery_partition_by={
       "field": "latest_collector_tstamp",
@@ -15,7 +15,7 @@
 ) }}
 
 {%- set user_cols = ['CONTEXTS_COM_SNOWPLOWANALYTICS_CONSOLE_USER_1_0_1'] -%}
-{%- set user_keys = [['userId', 'firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
+{%- set user_keys = [['auth_userId', 'firstName', 'lastName', 'organizationId', 'email', 'jobTitle', 'accessLevel']] -%}
 {%- set user_types = [['string', 'string', 'string', 'string', 'string', 'string', 'string']] -%}
 
 {{ snowplow_normalize.users_table(
