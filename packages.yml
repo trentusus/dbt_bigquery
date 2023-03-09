@@ -1,5 +1,5 @@
 packages: 
  - package: snowplow/snowplow_web
    version: 0.13.2
- - package: snowplow/snowplow_normalize
-   version: 0.2.1
+ - git: "https://github.com/snowplow/dbt-snowplow-normalize.git" # git URL
+   revision: feature/custom_user_id_field_name
