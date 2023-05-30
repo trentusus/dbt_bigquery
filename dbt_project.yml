@@ -43,7 +43,7 @@ vars:
     snowplow__derived_tstamp_partitioned: false
     snowplow__min_visit_length: 30 # Default value
     snowplow__heartbeat: 30 # Default value
-    snowplow__start_date: '2023-03-05'
+    snowplow__start_date: '2023-05-30'
     snowplow__backfill_limit_days: 1
     snowplow__app_id: ['website']
 
